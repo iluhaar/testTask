@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useCallback } from 'react'
+import Main from './components/Main';
+import Sidebar from './components/SideBar';
+import Footer from './components/Footer';
 
 function App() {
+
+  const [showSidebar, setShowSidebar] = useState(false);
+  const toggleSidebar = useCallback(() => setShowSidebar(v => !v));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <header className="App-header">
+          <button onClick={toggleSidebar}>
+            {showSidebar ? "Hide" : "Show"}
+          </button>
+        </header>
+      </div>
+      <div className="main">
+        {!showSidebar ? null : <Sidebar />}
+        <div className="content">
+          <Main />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

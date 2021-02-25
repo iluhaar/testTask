@@ -1,0 +1,27 @@
+.App {
+  display: grid;
+  grid-template-rows: 75px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas:
+    "h h h h h"
+    "n c"
+}
+
+.App-header {
+  grid-area: h;
+  background-color: #282c34;
+  min-width: 100%;
+}
+.footer {
+  grid-area: ft;
+  background-color: red;
+  width: 100px;
+}
+.main {
+  grid-area: c;
+}
+.sidebar {
+  background-color: #282c34;
+  grid-area: n;
+  max-width: 120px !important;
+}
