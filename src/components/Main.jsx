@@ -28,7 +28,7 @@ const Main = () => {
     <div className="Number">
       <div>
         <h1>
-          Random generated number: <label>{number}</label>
+          Random number: <label>{number}</label>
         </h1>
       </div>
       <div>
