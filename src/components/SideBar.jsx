@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div>
       <aside className="sidebar">
       <div>
-      <p>sidebar</p>
+      <h1>sidebar</h1>
         <img src="https://bit.ly/3bCK6Xf" alt="wink"/>
             </div>
     </aside>

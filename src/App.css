@@ -27,7 +27,7 @@ button {
   min-width: 100vw;
 }
 h1 {
-  background-color: brown;
+  background-color: #24262e;
   padding: 15px;
 }
 .App-header {
@@ -36,7 +36,7 @@ h1 {
   flex: 1;
   height: 4rem;
   min-height: 4rem;
-  background-color: #232429;
+  background-color: #c5c6c9;
   font-size: calc(10px + 2vmin);
   color: white;
   padding-bottom: 0px;
@@ -53,7 +53,7 @@ h1 {
   flex: 1 1 auto;
   overflow-y: auto;
   margin-top: 0;
-  background-color: #191a1e;
+  background-color: #efefef;
   justify-content: center;
   min-width: 100vw;
 }
@@ -61,12 +61,18 @@ h1 {
   padding: 10px 24px;
   margin-bottom: 10px;
 }
-
+.Number {
+  margin: 10px;
+  padding: 10px;
+}
 .TextBody {
   background-color: #585d68;
   padding: 10px;
   text-align: left;
   min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+  margin: 10px;
 }
 .content {
   display: flex;
@@ -77,14 +83,16 @@ h1 {
   margin: 10px;
   min-height: 100vh;
   min-width: 150px;
-  background-color: #585d68;
+  background-color: #c5c6c9;
   padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
 }
 .footer {
   position: relative;
-  background-color: #282c34;
+  background-color: #efefef;
   padding: 5px;
 }
 .footer a {
-  color: #ffffff;
+  color: #1f1d1d;
 }
